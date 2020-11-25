@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="364.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatisticsMenu.History.Training2.Training2Controller">
+   <top>
+      <AnchorPane prefHeight="105.0" prefWidth="364.0" style="-fx-background-color: #b0e0e6;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="44.0" layoutY="18.0" prefHeight="68.0" prefWidth="290.0" text="training 2" textFill="#2c2e70">
+               <font>
+                  <Font name="Castellar" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="75.0" layoutY="50.0" prefHeight="41.0" prefWidth="69.0" text="Distance" textFill="#2c2e70">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="75.0" layoutY="125.0" prefHeight="30.0" prefWidth="46.0" text="Time" textFill="#2c2e70">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="75.0" layoutY="200.0" prefHeight="37.0" prefWidth="73.0" text="Time/km" textFill="#2c2e70">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="username" alignment="CENTER" layoutX="82.0" layoutY="2.0" prefHeight="24.0" prefWidth="76.0" textFill="#2c2e70" />
+            <TextField fx:id="timePerKmField" editable="false" focusTraversable="false" layoutY="191.0" prefHeight="28.0" prefWidth="73.0" />
+            <TextField fx:id="timeField" editable="false" focusTraversable="false" layoutY="113.0" prefHeight="28.0" prefWidth="73.0" />
+            <TextField fx:id="distanceField" editable="false" focusTraversable="false" layoutY="43.0" prefHeight="28.0" prefWidth="73.0" />
+         </children></AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" layoutX="161.0" layoutY="147.0" mnemonicParsing="false" onAction="#backtoHistoryMenu" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #b0e0e6;" text="Cancle" textFill="WHITE" />
+            <Label fx:id="blank" alignment="CENTER" layoutX="23.0" layoutY="107.0" prefHeight="32.0" prefWidth="326.0" textFill="#d16161">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="75.0" layoutY="50.0" prefHeight="45.0" prefWidth="68.0" text="Calories" textFill="#2c2e70">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="calorieField" editable="false" focusTraversable="false" layoutX="199.0" layoutY="50.0" prefHeight="28.0" prefWidth="73.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

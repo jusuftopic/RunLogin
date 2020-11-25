@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="362.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RunLog.RunLogController">
+   <top>
+      <AnchorPane prefHeight="104.0" prefWidth="362.0" style="-fx-background-color: #b0e0e6;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="140.0" layoutY="21.0" prefHeight="76.0" prefWidth="207.0" text="log your last training" textFill="#2c2e70">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logImageID" fitHeight="105.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/log.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="517.0" prefWidth="362.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="57.0" layoutY="60.0" prefHeight="37.0" prefWidth="105.0" text="Kilometers:" textFill="#2c2e70">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="130.0" prefHeight="24.0" prefWidth="81.0" text="Time:" textFill="#2c2e70">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="190.0" prefHeight="24.0" prefWidth="77.0" text="Calories:" textFill="#2c2e70">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="250.0" text="Time per kilometer:" textFill="#2c2e70">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="distanceID" layoutX="163.0" layoutY="65.0" prefWidth="140.0" promptText="Enter the distance " />
+            <Label fx:id="blankID" alignment="CENTER" layoutX="43.0" layoutY="21.0" prefHeight="17.0" prefWidth="275.0" textFill="#d62727">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="timeID" layoutX="163.0" layoutY="128.0" prefWidth="140.0" promptText="Enter the time" />
+            <TextField fx:id="calorieID" layoutX="163.0" layoutY="189.0" prefWidth="140.0" promptText="Enter calorie consumption" />
+            <TextField fx:id="minkmID" layoutX="228.0" layoutY="247.0" prefHeight="28.0" prefWidth="75.0" promptText="Min/km">
+               <tooltip>
+                  <Tooltip text="Mark the average time per kilometer" />
+               </tooltip>
+            </TextField>
+            <Button fx:id="insertID" layoutX="64.0" layoutY="326.0" mnemonicParsing="false" onAction="#insertData" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: #b0e0e6;" text="Insert" textFill="#fffefe" />
+            <Button fx:id="cancleID" layoutX="204.0" layoutY="326.0" mnemonicParsing="false" onAction="#cancleIDOnAction" prefHeight="28.0" prefWidth="99.0" style="-fx-background-color: #b0e0e6;" text="Cancel" textFill="WHITE" />
+            <TextField fx:id="getuserID" layoutX="113.0" layoutY="371.0" promptText="usernameID" visible="false" />
+            <TextField alignment="CENTER" layoutX="319.0" layoutY="64.0" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: #b0e0e6;" text="!">
+               <tooltip>
+                  <Tooltip text="Enter only numbers" />
+               </tooltip>
+            </TextField>
+            <TextField alignment="CENTER" layoutX="319.0" layoutY="128.0" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: #b0e0e6;" text="!">
+               <tooltip>
+                  <Tooltip text="Format hh:mm:ss" />
+               </tooltip>
+            </TextField>
+            <TextField alignment="CENTER" layoutX="319.0" layoutY="247.0" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: #b0e0e6;" text="!">
+               <tooltip>
+                  <Tooltip text="Format mm:ss" />
+               </tooltip>
+            </TextField>
+            <Label fx:id="blankUsername" alignment="CENTER" layoutX="282.0" layoutY="5.0" prefHeight="17.0" prefWidth="74.0" textFill="#2c2e70" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

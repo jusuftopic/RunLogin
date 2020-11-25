@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="450.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FriendProfile.FriendProfileController">
+   <top>
+      <AnchorPane prefHeight="106.0" prefWidth="364.0" style="-fx-background-color: #b0e0e6;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="14.0" prefHeight="38.0" prefWidth="299.0" text="Add your friend and make the running " textFill="#2c2e70">
+               <font>
+                  <Font name="Castellar" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="211.0" layoutY="53.0" text="more interesting" textFill="#2c2e70">
+               <font>
+                  <Font name="Castellar" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="avatarView" fitHeight="126.0" fitWidth="106.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/avatar2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="friendusername" alignment="CENTER" layoutX="93.0" layoutY="7.0" prefHeight="37.0" prefWidth="280.0" textFill="#2c2e70">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="55.0" prefHeight="33.0" prefWidth="74.0" text="E-mail:" textFill="#2c2e70" />
+            <Label alignment="CENTER" layoutX="7.0" layoutY="120.0" prefHeight="33.0" prefWidth="74.0" text="Weight" textFill="#2c2e70" />
+            <Label alignment="CENTER" layoutX="7.0" layoutY="195.0" prefHeight="33.0" prefWidth="74.0" text="Height" textFill="#2c2e70" />
+            <TextField fx:id="email" editable="false" focusTraversable="false" layoutX="71.0" layoutY="60.0" />
+            <TextField fx:id="weight" editable="false" focusTraversable="false" layoutX="71.0" layoutY="120.0" prefHeight="28.0" prefWidth="60.0" />
+            <TextField fx:id="height" editable="false" focusTraversable="false" layoutX="71.0" layoutY="201.0" prefHeight="28.0" prefWidth="60.0" />
+            <Label layoutX="246.0" layoutY="63.0" text="Total distance:" textFill="#2c2e70" />
+            <Label layoutX="246.0" layoutY="128.0" text="Total time" textFill="#2c2e70" />
+            <Label layoutX="246.0" layoutY="203.0" text="Total trainings" textFill="#2c2e70" />
+            <TextField fx:id="totaldistance" editable="false" focusTraversable="false" layoutX="344.0" layoutY="57.0" prefHeight="28.0" prefWidth="55.0" />
+            <TextField fx:id="totaltime" focusTraversable="false" layoutX="346.0" layoutY="122.0" prefHeight="28.0" prefWidth="55.0" />
+            <TextField fx:id="totaltrainings" editable="false" focusTraversable="false" layoutX="346.0" layoutY="197.0" prefHeight="28.0" prefWidth="55.0" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="username" alignment="CENTER" prefHeight="24.0" prefWidth="76.0" textFill="#2c2e70" />
+         </children></AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cancel" layoutX="177.0" layoutY="144.0" mnemonicParsing="false" onAction="#backToFindFriendController" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #b0e0e6;" text="Cancel" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="7.0" layoutY="41.0" prefHeight="33.0" prefWidth="74.0" text="Age" textFill="#2c2e70" />
+            <TextField fx:id="age" editable="false" focusTraversable="false" layoutX="72.0" layoutY="44.0" prefHeight="28.0" prefWidth="60.0" />
+            <Label fx:id="blankLabel" alignment="CENTER" layoutX="51.0" layoutY="92.0" prefHeight="17.0" prefWidth="360.0" textFill="#d16161" />
+            <Label layoutX="246.0" layoutY="49.0" textFill="#2c2e70" />
+            <TextField fx:id="calorieField" editable="false" focusTraversable="false" layoutX="346.0" layoutY="44.0" prefHeight="28.0" prefWidth="55.0" />
+            <Label layoutX="246.0" layoutY="49.0" text="Calorie" textFill="#2c2e70" />
+            <Button fx:id="addFriend" layoutX="177.0" layoutY="109.0" mnemonicParsing="false" onAction="#addFriends" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #b0e0e6;" text="Add friend" textFill="WHITE" />
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

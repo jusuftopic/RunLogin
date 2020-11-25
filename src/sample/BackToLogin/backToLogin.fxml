@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="380.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BackToLogin.BackToLogin">
+   <top>
+      <AnchorPane prefHeight="76.0" prefWidth="381.0" style="-fx-background-color: #b0e0e6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="rightID" fitHeight="78.0" fitWidth="81.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/right.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="147.0" layoutY="9.0" prefHeight="55.0" prefWidth="233.0" text="Welcome" textFill="#2c2e70">
+               <font>
+                  <Font name="Calibri Light" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="51.0" layoutY="21.0" prefHeight="29.0" prefWidth="290.0" text="Congratulations, you have become a member of the" textFill="#2c2e70" />
+            <Label layoutX="141.0" layoutY="50.0" prefHeight="27.0" prefWidth="132.0" text=" run.log application." textFill="#2c2e70" />
+            <Button fx:id="backToLoginID" layoutX="141.0" layoutY="117.0" mnemonicParsing="false" onAction="#backToLoginIDOnAction" prefHeight="28.0" prefWidth="109.0" text="Back to login" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

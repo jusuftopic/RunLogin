@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="450.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyFriends.SuccessfulMeetingController">
+   <top>
+      <AnchorPane prefHeight="82.0" prefWidth="451.0" style="-fx-background-color: #b0e0e6;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="70.0" layoutY="27.0" text="Step by step to the team" textFill="#2c2e70">
+               <font>
+                  <Font name="Castellar" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="43.0" prefHeight="46.0" prefWidth="442.0" text="Congratulations! Your training has been agreed" textFill="#2c2e70">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancle" alignment="CENTER" layoutX="190.0" layoutY="111.0" mnemonicParsing="false" onAction="#goBack" prefHeight="28.0" prefWidth="72.0" style="-fx-background-color: #b0e0e6;" text="Cancel" textFill="WHITE" />
+            <Label fx:id="myuser" layoutX="10.0" layoutY="6.0" text="Label" visible="false" />
+            <Label fx:id="friendusername" layoutX="10.0" layoutY="35.0" text="Label" visible="false" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

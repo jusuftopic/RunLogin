@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="364.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FindFriends.FindFriendsController">
+   <top>
+      <AnchorPane prefHeight="105.0" prefWidth="364.0" style="-fx-background-color: #b0e0e6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="friendsPhotoView" fitHeight="105.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/98882361-friends-running-logo-vector.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="116.0" layoutY="21.0" prefHeight="46.0" prefWidth="233.0" text="find your friends on RunLog" textFill="#2c2e70">
+               <font>
+                  <Font name="Castellar" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="172.0" layoutY="58.0" text="make it easier" textFill="#2c2e70">
+               <font>
+                  <Font name="Castellar" size="12.203390121459961" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="186.0" prefWidth="327.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="86.0" layoutY="22.0" prefHeight="25.0" prefWidth="209.0" text="User name of your friend:" textFill="#2c2e70">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameOfFriend" alignment="CENTER" focusTraversable="false" layoutX="69.0" layoutY="66.0" prefHeight="28.0" prefWidth="243.0" promptText="Enter friends username" />
+            <CheckBox fx:id="nameUnknow" layoutX="117.0" layoutY="116.0" mnemonicParsing="false" text="I don't know username" />
+            <Hyperlink fx:id="linkTomail" alignment="CENTER" layoutX="122.0" layoutY="140.0" onAction="#findFriendAsEmail" prefHeight="24.0" prefWidth="126.0" text="Find with email" />
+            <Label fx:id="hiddenEmailfield" layoutX="30.0" layoutY="180.0" prefHeight="17.0" prefWidth="61.0" visible="false" />
+            <Label fx:id="trueOrFalse" layoutX="34.0" layoutY="116.0" prefHeight="17.0" prefWidth="38.0" visible="false" />
+            <Hyperlink fx:id="myFriends" layoutX="-1.0" layoutY="2.0" onAction="#listOfFriends" text="My friends" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="username" alignment="TOP_RIGHT" layoutX="-27.0" prefHeight="17.0" prefWidth="76.0" textFill="#2c2e70" />
+         </children></AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="199.0" prefWidth="364.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backToMain" layoutX="155.0" layoutY="142.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="6.0" prefWidth="67.0" style="-fx-background-color: #b0e0e6;" text="Cancel" textFill="WHITE" />
+            <Button fx:id="search" alignment="CENTER" layoutX="154.0" layoutY="85.0" mnemonicParsing="false" onAction="#searchYourFriend" prefHeight="28.0" prefWidth="68.0" style="-fx-background-color: #b0e0e6;" text="Serach" textFill="WHITE" />
+            <VBox fx:id="vBox" layoutX="64.0" layoutY="-44.0" prefHeight="128.0" prefWidth="247.0" spacing="5.0" visible="false">
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="239.0" text="E-mail " />
+                  <TextField fx:id="emailfield" alignment="CENTER" prefHeight="28.0" prefWidth="268.0" promptText="Enter friends e-mail" />
+               </children>
+            </VBox>
+            <Label fx:id="blankText" alignment="CENTER" layoutX="64.0" layoutY="28.0" prefHeight="17.0" prefWidth="271.0" textFill="#d16161" />
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>
